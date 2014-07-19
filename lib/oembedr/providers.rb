@@ -78,7 +78,7 @@ module Oembedr
       endpoint = LIST.find do |(pattern, endpoint)|
         url =~ pattern
       end
-      endpoint.last = endpoint.last.gsub('{2}', endpoint.first.match(url).to_a[2]) if endpoint.first.match(url) && endpoint.first.match(url).to_a[2]
+      endpoint[1] = endpoint.last.gsub('{2}', endpoint.first.match(url).to_a[2]) if endpoint.first.match(url) && endpoint.first.match(url).to_a[2]
       endpoint ? endpoint.last : false
     end
 
