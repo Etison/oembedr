@@ -25,7 +25,7 @@ module Oembedr
       /collegehumor\.com/ => 'http://www.collegehumor.com/oembed.{format}',
       /(wistia\.com|wi\.st)/ => 'http://fast.wistia.com/oembed.{format}',
       /s3\.amazonaws\.com/ => 'https://api.clickfunnels.com/oembed_s3.{format}',
-      /(http:\/\/|https:\/\/)(.*).evsuite\.com/ => 'https://app.evsuite.com/oembed.php',
+      /(http:\/\/|https:\/\/)(.*).evsuite\.com/ => 'https://{2}.evsuite.com/oembed.php',
 
       # Audio
       /soundcloud\.com/ => 'http://soundcloud.com/oembed',
@@ -78,6 +78,7 @@ module Oembedr
       endpoint = LIST.find do |(pattern, endpoint)|
         url =~ pattern
       end
+      endpoint.last = endpoint.last.gsub('{2}', endpoint.first.match(url).to_a[2]) if endpoint.first.match(url) && endpoint.first.match(url).to_a[2]
       endpoint ? endpoint.last : false
     end
 
