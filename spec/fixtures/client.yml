@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://www.youtube.com/oembed?url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Db9XsTtFu64Y&format=json
+    uri: https://www.youtube.com/oembed?url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Db9XsTtFu64Y&format=json
     body: ''
     headers:
       Accept:
@@ -40,7 +40,7 @@ http_interactions:
   recorded_at: Tue, 17 Jan 2012 21:08:21 GMT
 - request:
     method: get
-    uri: http://www.youtube.com/oembed?url=http%3A%2F%2Fwww.youtube.com%2Ffoobar%3Fqq%3D12314332&format=json
+    uri: https://www.youtube.com/oembed?url=http%3A%2F%2Fwww.youtube.com%2Ffoobar%3Fqq%3D12314332&format=json
     body: ''
     headers:
       Accept:
@@ -71,7 +71,7 @@ http_interactions:
   recorded_at: Tue, 17 Jan 2012 21:08:21 GMT
 - request:
     method: get
-    uri: http://www.youtube.com/oembed?maxwidth=150&maxheight=100&url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DQi_AAqi0RZM&format=json
+    uri: https://www.youtube.com/oembed?maxwidth=150&maxheight=100&url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DQi_AAqi0RZM&format=json
     body: ''
     headers:
       Accept:
