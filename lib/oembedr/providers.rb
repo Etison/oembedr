@@ -4,12 +4,12 @@ module Oembedr
     # from ruby-oembed with a couple more I know of from user feedback :).
     LIST = {
       # Video
-      /(youtu\.be|youtube)/ => "http://www.youtube.com/oembed",
+      /(youtu\.be|youtube)/ => "https://www.youtube.com/oembed",
       /viddler\.com/ => "http://www.viddler.com/oembed/",
       /qik\.com/ => "http://qik.com/api/oembed.{format}",
       /revision3/ => "http://revision3.com/api/oembed/",
       /hulu/ => "http://www.hulu.com/api/oembed.{format}",
-      /vimeo/ => "http://vimeo.com/api/oembed.{format}",
+      /vimeo/ => "https://vimeo.com/api/oembed.{format}",
       /(mlg\.tv|tv\.majorleaguegaming)/ => "http://tv.majorleaguegaming.com/oembed",
       /twitch\.tv/ => 'http://api.twitch.tv/api/embed/',
       /dailymotion\.com/ => 'http://www.dailymotion.com/api/oembed/',
@@ -23,7 +23,7 @@ module Oembedr
       /justin\.tv/ => 'http://api.justin.tv/api/embed/from_url.{format}',
       /wordpress\.tv/ => 'http://wordpress.tv/oembed/',
       /collegehumor\.com/ => 'http://www.collegehumor.com/oembed.{format}',
-      /(wistia\.com|wi\.st)/ => 'http://fast.wistia.com/oembed.{format}',
+      /(wistia\.com|wi\.st)/ => 'https://fast.wistia.com/oembed.{format}',
       /s3\.amazonaws\.com/ => 'https://api.clickfunnels.com/oembed_s3.{format}',
       /(http:\/\/|https:\/\/)(.*).evsuite\.com/ => 'https://{2}.evsuite.com/oembed.php',
 

@@ -26,7 +26,7 @@ module Oembedr
 
     describe "#host" do
       it "returns an intelligent hostname (including the scheme) instead of just the domain" do
-        parser.host.should == "http://www.youtube.com"
+        parser.host.should == "https://www.youtube.com"
         complex_url_parser.host.should == "https://api.twitter.com"
       end
       it "returns false if there wasn't a valid URL" do
